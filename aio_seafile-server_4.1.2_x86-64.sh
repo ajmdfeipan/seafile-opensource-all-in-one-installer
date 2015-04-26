@@ -6,8 +6,8 @@
 clear
 cat <<EOF
 
-  Seafile OpenSource Server installer with MySQL and NGINX...
-
+  All-In-One Seafile Server 4.1.2 installer for Debian Wheezy (64bit)
+  - Seafile, MariaDB, Memcached, NGINX -
   -----------------------------------------------------------------
 
   This installer is meant to run on a freshly installed machine
@@ -160,7 +160,7 @@ EOF
 chmod 600 /root/.my.cnf
 
 # -------------------------------------------
-# Seafile Initskript
+# Seafile init script
 # -------------------------------------------
 cat > /etc/init.d/seafile-server <<'EOF'
 #!/bin/bash
