@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -x
 # -------------------------------------------
-# Seafile OpenSource Server install script
+# All-In-One Seafile Server 4.1.2 installer for Debian Wheezy (64bit)
 # -------------------------------------------
 clear
 cat <<EOF
@@ -533,7 +533,8 @@ cat <<EOF
   
   4) Harden system with port knocking, fail2ban, etc.
   
-  5) Enable unattended installation of security updates.
+  5) Enable unattended installation of security updates. Check 
+     https://wiki.debian.org/UnattendedUpgrades for details.
     
   
   
