@@ -502,6 +502,9 @@ cat <<EOF
 
   Seafile Data Dir:    ${SEAFILE_DATA_DIR}
 
+  Seafile DB Credentials:  Check /opt/seafile/.my.cnf 
+  Root DB Credentials:     Check /root/.my.cnf 
+  
 
   
   Now you should manually complete the following steps
@@ -518,12 +521,13 @@ cat <<EOF
      you may also open tcp port 80 which redirects all unencrypted
      http traffic to the encrypted https port.
 
-  5) Seahub sends email via the local postfix instance. Make sure Postfix 
-     is able to send emails.
+  5) Seahub tries to send emails via the local server. Install and 
+     configure Postfix for this to work.
   
   
   Optional steps
   -----------------------------------------------------------------
+
   1) Check seahub_settings.py and customize it to fit your needs. Consult 
      http://manual.seafile.com/config/seahub_settings_py.html for possible switches.
   
@@ -535,14 +539,16 @@ cat <<EOF
   
   5) Enable unattended installation of security updates. Check 
      https://wiki.debian.org/UnattendedUpgrades for details.
+
+  6) Implement a backup routine for your Seafile server.
     
   
   
-  Seafile support options:
+  Seafile support options
   -----------------------------------------------------------------
 
-  For community support visit:   https://forum.seafile-server.org
-  For commercial support visit:  https://seafile.com.de
+  For free community support visit:   https://forum.seafile-server.org
+  For paid commercial support visit:  https://seafile.com.de
 
 
   
