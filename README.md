@@ -1,5 +1,5 @@
 # seafile-opensource-all-in-one-installer
-This script installs the Seafile Open Source Server on a Debian Wheezy (64bit). It's meant to run on a system with minimal pre-installation. No Desktop environment or other weird stuff like Plesk...
+This script installs the Seafile Open Source Server on a Debian Wheezy (64bit). It's meant to run on a system with minimal pre-installation. No desktop environment or other weird stuff like hosting panels (Plesk, ISPconfig, etc.)...
 
 Never run the script on a production server. It's more or less a one trick pony and can seriously damage productions systems. So run it only one time and delete it afterwards. 
 
