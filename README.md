@@ -30,9 +30,7 @@ bash aio_seafile-server_4.1.2_x86-64.sh
 ## After running the installer
 
 1. Delete installer script. You wont need it anymore and might even seriously damage your system if ran again.
-2. Follow the suggested steps at the end of the installation scripts output to finalize your Seafile installation.
-
-As a bare minimum you most definitely will want to change the listening IP to a valid DNS name...
+2. Follow the suggested steps at the end of the installation to finalize your Seafile server installation. As a bare minimum you most definitely will want to change the listening IP to a valid DNS name...
 
 
 ## Bugs, suggestions, you name it...
