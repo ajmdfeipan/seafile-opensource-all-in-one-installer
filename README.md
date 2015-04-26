@@ -5,9 +5,15 @@ Never run the script on a production server. It's more or less a one trick pony 
 
 You will have to handle Seafile updates/upgrades manually after the initial installation. Consult http://manual.seafile.com/deploy/upgrade.html on how to upgrade Seafile. 
 
+## How to run
+<pre>
+cd /tmp
+wget https://raw.githubusercontent.com/alexanderjackson/seafile-opensource-all-in-one-installer/master/aio_seafile-server_4.1.2_x86-64.sh
+bash aio_seafile-server_4.1.2_x86-64.sh
+</pre>
+
 
 ## The installer does
-
 1. Update and upgrade Debian
 2. Install NGINX from http://nginx.org/packages/mainline/debian/ 
 3. Install MariaDB from http://mirror.netcologne.de/mariadb/repo/10.0/debian
