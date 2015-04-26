@@ -504,7 +504,7 @@ cat <<EOF
 
 
   
-  Now you should manually complete the following steps:
+  Now you should manually complete the following steps
   -----------------------------------------------------------------
 
   1) seahub_settings.py:  Change IP within FILE_SERVER_ROOT variable to DNS
@@ -518,7 +518,24 @@ cat <<EOF
      you may also open tcp port 80 which redirects all unencrypted
      http traffic to the encrypted https port.
 
-
+  5) Seahub sends email via the local postfix instance. Make sure Postfix 
+     is able to send emails.
+  
+  
+  Optional steps
+  -----------------------------------------------------------------
+  1) Check seahub_settings.py and customize it to fit your needs. Consult 
+     http://manual.seafile.com/config/seahub_settings_py.html for possible switches.
+  
+  2) Setup NGINX with official SSL certificate.
+  
+  3) Secure server with iptables based firewall. For instance: UFW or shorewall
+  
+  4) Harden system with port knocking, fail2ban, etc.
+  
+  5) Enable unattended installation of security updates.
+    
+  
   
   Seafile support options:
   -----------------------------------------------------------------
