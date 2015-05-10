@@ -183,7 +183,7 @@ cat > /etc/init.d/seafile-server <<'EOF'
 user=seafile
 
 # Change the value of "seafile_dir" to your path of seafile installation
-seafile_dir=/opt/seafile/haiwen
+seafile_dir=/opt/seafile
 script_path=${seafile_dir}/seafile-server-latest
 seafile_init_log=${seafile_dir}/logs/seafile.init.log
 seahub_init_log=${seafile_dir}/logs/seahub.init.log
