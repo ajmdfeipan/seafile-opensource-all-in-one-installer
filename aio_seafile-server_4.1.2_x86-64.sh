@@ -108,6 +108,8 @@ server {
         fastcgi_param   SERVER_NAME         $server_name;
 
         fastcgi_param   HTTPS               on;
+        
+        client_max_body_size 0;
 
         access_log      /var/log/nginx/seafdav.access.log;
         error_log       /var/log/nginx/seafdav.error.log;
